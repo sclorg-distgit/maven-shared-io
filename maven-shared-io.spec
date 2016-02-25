@@ -4,7 +4,7 @@
 
 Name:           %{?scl_prefix}%{pkg_name}
 Version:        1.1
-Release:        7.11%{?dist}
+Release:        7.12%{?dist}
 # Maven-shared defines maven-shared-io version as 1.2
 Epoch:          1
 Summary:        API for I/O support like logging, download or file scanning.
@@ -17,7 +17,7 @@ Source0:        %{pkg_name}-%{version}.tar.xz
 Source1:        http://www.apache.org/licenses/LICENSE-2.0.txt
 BuildArch:      noarch
 
-BuildRequires:  %{?scl_prefix_java_common}maven-local
+BuildRequires:  %{?scl_prefix}maven-local
 BuildRequires:  %{?scl_prefix}maven-shared
 BuildRequires:  %{?scl_prefix_java_common}easymock
 
@@ -68,6 +68,9 @@ set -e -x
 %doc LICENSE.txt
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 1:1.1-7.12
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Michal Srb <msrb@redhat.com> - 1:1.1-7.11
 - maven33 rebuild #2
 
