@@ -4,7 +4,7 @@
 Name:           %{?scl_prefix}maven-shared-io
 Epoch:          1
 Version:        3.0.0
-Release:        3.1%{?dist}
+Release:        3.2%{?dist}
 Summary:        API for I/O support like logging, download or file scanning
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/maven-shared-io
@@ -53,6 +53,9 @@ API documentation for %{pkg_name}.
 %license LICENSE NOTICE
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 1:3.0.0-3.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 1:3.0.0-3.1
 - Automated package import and SCL-ization
 
